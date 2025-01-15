@@ -445,7 +445,7 @@ export default class Datepicker extends Controller {
   // @param selected [Number] the selected year
   yearOptions(selected) {
     const years = []
-    const extent = 10
+    const extent = 100
     for (let y = selected - extent; y <= selected + extent; y++) years.push(y)
     return years
       .map(year => `<option ${year == selected ? 'selected' : ''}>${year}</option>`)
