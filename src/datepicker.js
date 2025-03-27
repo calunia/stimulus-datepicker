@@ -110,7 +110,7 @@ export default class Datepicker extends Controller {
 
   update() {
     const dateStr = this.parse(this.inputTarget.value)
-    if (dateStr != '') this.dateValue = dateStr
+    this.dateValue = dateStr
   }
 
   toggle(event) {
